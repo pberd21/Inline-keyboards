@@ -22,7 +22,6 @@ inline_keyboard = InlineKeyboardMarkup(row_width=1)
 inline_keyboard.add(
     InlineKeyboardButton("Рассчитать норму калорий", callback_data="calories"),
     InlineKeyboardButton("Формулы расчёта", callback_data="formulas")
-)
 
 @dp.message_handler(commands=["start"])
 async def start(message: Message):
